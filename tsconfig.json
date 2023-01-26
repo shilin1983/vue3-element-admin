@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "_v/*": ["src/views/*"],
+    },
+    "types": [
+      "@intlify/unplugin-vue-i18n/types",
+      "element-plus/global",
+      "unplugin-auto-import-element-plus-preset/type",
+      "vite-plugin-svg-icons/client",
+      "vite/client",
+    ],
+    "typeRoots": ["./node_modules/@types/", "./types"]
+  },
+  "include": ["src/**/*", "types/**/*.d.ts", "mock/**/*.ts", "auto-imports.d.ts", "components.d.ts"],
+  "exclude": ["dist", "node_modules"]
+}
